@@ -3,7 +3,7 @@ import { Add16Filled } from '@fluentui/react-icons'
 import Link from 'components/Link'
 import React from 'react'
 
-const index: React.FC = () => {
+const PublicSidebar: React.FC = () => {
   return (
     <chakra.aside
       p={6}
@@ -46,4 +46,4 @@ const index: React.FC = () => {
     </chakra.aside>
   )
 }
-export default index
+export default PublicSidebar

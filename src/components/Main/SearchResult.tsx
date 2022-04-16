@@ -1,8 +1,5 @@
-import { Box, Heading, Stack, VStack, Text, Flex } from '@chakra-ui/react'
-import {
-  MoreHorizontal16Regular,
-  MoreVertical16Regular
-} from '@fluentui/react-icons'
+import { Flex, Heading, Stack, Text, VStack } from '@chakra-ui/react'
+import { MoreVertical16Regular } from '@fluentui/react-icons'
 import Link from 'components/Link'
 import React from 'react'
 

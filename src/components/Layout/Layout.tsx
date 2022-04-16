@@ -10,10 +10,10 @@ import {
   Stack
 } from '@chakra-ui/react'
 import { Search16Regular } from '@fluentui/react-icons'
-import React from 'react'
-import LeftSidebar from '../LeftSidebar'
-import { useRouter } from 'next/router'
 import Link from 'components/Link'
+import { useRouter } from 'next/router'
+import React from 'react'
+import LeftSidebar from '../LeftSidebar/PublicSidebar'
 
 const Layout = ({ children }: any) => {
   const router = useRouter()
