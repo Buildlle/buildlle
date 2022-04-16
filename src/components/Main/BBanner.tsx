@@ -36,10 +36,9 @@ const BBanner: React.FC = () => {
           </Text>
         </Stack>
         <InputGroup w={{ base: '100%', md: '600px' }}>
-          <InputLeftElement
-            pointerEvents="none"
-            children={<Search16Regular />}
-          />
+          <InputLeftElement pointerEvents="none">
+            <Search16Regular />
+          </InputLeftElement>
           <Input variant="outline" type="search" />
         </InputGroup>
         <Stack

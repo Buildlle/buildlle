@@ -19,7 +19,7 @@ import { useRouter } from 'next/router'
 import React from 'react'
 import AdminSidebar from '../LeftSidebar/AdminLeftSidebar'
 
-const AdminLayout: React.FC = ({ children }) => {
+const AdminLayout = ({ children }: any) => {
   const router = useRouter()
 
   return (
@@ -61,10 +61,9 @@ const AdminLayout: React.FC = ({ children }) => {
                 w="800px"
                 _focus={{ boxShadow: '0px 4px 12px rgba(20, 20, 21, 4%)' }}
               >
-                <InputLeftElement
-                  pointerEvents="none"
-                  children={<Search16Regular />}
-                />
+                <InputLeftElement pointerEvents="none">
+                  <Search16Regular />
+                </InputLeftElement>
                 <Input type="search" />
               </InputGroup>
             </Stack>
@@ -135,10 +134,9 @@ const AdminLayout: React.FC = ({ children }) => {
                 }}
                 _focus={{ width: '100%' }}
               >
-                <InputLeftElement
-                  pointerEvents="none"
-                  children={<Search16Regular />}
-                />
+                <InputLeftElement pointerEvents="none">
+                  <Search16Regular />
+                </InputLeftElement>
                 <Input type="search" />
               </InputGroup>
             </Stack>
