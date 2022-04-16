@@ -46,11 +46,7 @@ const AdminSidebar: React.FC = () => {
           <Divider />
           <Stack px={6} py={2} w="100%">
             <Flex align="center" color="black.100" opacity="48%">
-              <Icon
-                boxSize={4}
-                opacity="36%"
-                as={(props) => <GoTriangleRight {...props} />}
-              />
+              <Icon boxSize={4} opacity="36%" as={() => <GoTriangleRight />} />
               <Text pl="1">My Entries</Text>
             </Flex>
           </Stack>
@@ -61,9 +57,7 @@ const AdminSidebar: React.FC = () => {
             w="full"
             fontWeight="500"
             fontSize="sm"
-            leftIcon={
-              <Icon boxSize={4} as={(props) => <Add16Filled {...props} />} />
-            }
+            leftIcon={<Icon boxSize={4} as={() => <Add16Filled />} />}
           >
             Add Entry
           </Button>

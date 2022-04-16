@@ -168,9 +168,7 @@ const Content: NextPage = () => {
                             leftIcon={
                               <Icon
                                 boxSize={4}
-                                as={(props) => (
-                                  <ChevronDown16Filled {...props} />
-                                )}
+                                as={() => <ChevronDown16Filled />}
                               />
                             }
                           >
@@ -322,10 +320,7 @@ const Content: NextPage = () => {
                       size="xs"
                       fontWeight="500"
                       leftIcon={
-                        <Icon
-                          boxSize={4}
-                          as={(props) => <ChevronDown16Filled {...props} />}
-                        />
+                        <Icon boxSize={4} as={() => <ChevronDown16Filled />} />
                       }
                     >
                       View 2 Replies

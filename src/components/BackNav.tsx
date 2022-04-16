@@ -21,7 +21,7 @@ const BackNav: React.FC = () => {
           rounded="full"
           size="sm"
         >
-          <Icon boxSize={4} as={(props) => <ArrowLeft24Filled {...props} />} />
+          <Icon boxSize={4} as={() => <ArrowLeft24Filled />} />
         </Button>
       </Stack>
     </chakra.nav>

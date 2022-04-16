@@ -80,18 +80,14 @@ const SignIn: NextPage = () => {
           </HStack>
           <Button
             variant="google"
-            leftIcon={
-              <Icon boxSize={6} as={(props) => <FcGoogle {...props} />} />
-            }
+            leftIcon={<Icon boxSize={6} as={() => <FcGoogle />} />}
           >
             Continue with Google
           </Button>
 
           <Button
             variant="apple"
-            leftIcon={
-              <Icon boxSize={6} as={(props) => <FaApple {...props} />} />
-            }
+            leftIcon={<Icon boxSize={6} as={() => <FaApple />} />}
           >
             Continue with Apple
           </Button>

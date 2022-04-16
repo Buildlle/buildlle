@@ -38,9 +38,7 @@ const index: React.FC = () => {
           w="full"
           fontWeight="500"
           fontSize="sm"
-          leftIcon={
-            <Icon boxSize={4} as={(props) => <Add16Filled {...props} />} />
-          }
+          leftIcon={<Icon boxSize={4} as={() => <Add16Filled />} />}
         >
           Add Entry
         </Button>

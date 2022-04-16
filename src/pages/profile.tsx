@@ -1,25 +1,15 @@
 import {
   Avatar,
-  Box,
   Button,
   chakra,
-  Divider,
-  Flex,
   Grid,
   Heading,
-  Icon,
-  Image,
   Stack,
   Text
 } from '@chakra-ui/react'
-import {
-  ChevronDown16Filled,
-  ChevronDown16Regular
-} from '@fluentui/react-icons'
 import SearchResult from 'components/Main/SearchResult'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import BackNav from '../components/BackNav'
 import Layout from '../components/Layout/Layout'
 
 const Profile: NextPage = () => {
