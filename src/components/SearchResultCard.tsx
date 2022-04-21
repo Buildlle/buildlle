@@ -1,4 +1,12 @@
-import { Flex, Heading, Stack, Text, VStack } from '@chakra-ui/react'
+import {
+  Avatar,
+  Box,
+  Flex,
+  Heading,
+  Stack,
+  Text,
+  VStack
+} from '@chakra-ui/react'
 import { MoreVertical16Regular } from '@fluentui/react-icons'
 import Link from 'components/Link'
 import React from 'react'
@@ -14,12 +22,22 @@ const SearchResult: React.FC = () => {
       bg="linear-gradient(90deg, #FAFAFA 0%, rgba(250, 250, 250, 0) 100%)"
       p="2"
     >
-      <VStack align="flex-start" py="2" px={{ base: '0', md: '2' }}>
+      <Box w="124px" h="124px" bgColor="white.500" rounded="12px" />
+      <VStack align="flex-start" py="4" px={{ base: '0', md: '2' }}>
         <Flex fontSize="xs" align="center">
-          <Text noOfLines={[1]}>
-            https://buildlle.com › Bay-Lionel › DaGenix-rust
+          <Avatar
+            size="xs"
+            // w="40px"
+            // h="40px"
+            bg="grad.300"
+            color="black.100"
+            name="R"
+            src="https://bit.ly/broken-link"
+          />
+          <Text noOfLines={[1]} px={3}>
+            Russel Neo
           </Text>
-          <Text px="2" noOfLines={[1, 2]}>
+          <Text pr="2" noOfLines={[1, 2]}>
             27 Dec 2021
           </Text>
           <MoreVertical16Regular />

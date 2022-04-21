@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react'
 import { Add16Filled } from '@fluentui/react-icons'
 import Link from 'components/Link'
-import SearchResult from 'components/Main/SearchResult'
+import SearchResult from 'components/SearchResultCard'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import AdminLayout from '../../components/Layout/AdminLayout'

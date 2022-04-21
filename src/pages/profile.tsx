@@ -7,7 +7,8 @@ import {
   Stack,
   Text
 } from '@chakra-ui/react'
-import SearchResult from 'components/Main/SearchResult'
+import SearchResultCard from 'components/SearchResultCard'
+import SearchResult from 'components/SearchResultCard'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Layout from '../components/Layout/Layout'
@@ -48,10 +49,10 @@ const Profile: NextPage = () => {
           maxW={{ base: '100%', md: '780px' }}
           py="6"
         >
-          <SearchResult />
-          <SearchResult />
-          <SearchResult />
-          <SearchResult />
+          <SearchResultCard />
+          <SearchResultCard />
+          <SearchResultCard />
+          <SearchResultCard />
         </Stack>
 
         <chakra.aside

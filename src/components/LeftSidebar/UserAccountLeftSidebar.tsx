@@ -14,44 +14,47 @@ import { GoTriangleRight } from 'react-icons/go'
 import Link from 'components/Link'
 import React from 'react'
 
-const AdminSidebar: React.FC = () => {
+const UserAccountLeftSidebar: React.FC = () => {
   return (
     <chakra.aside
+      gridArea="lsidebar"
       w="249px"
       rounded="20px"
-      border="1px solid #EAEDF1"
+      border="1px solid"
+      borderColor="white.500"
       h="80vh"
       pos="fixed"
     >
-      <VStack h="100%" align="flex-start" spacing="6">
+      <VStack h="100%" align="flex-start" spacing="3">
         <Heading px={6} pt={6} fontSize="xl" fontWeight="500">
           My Account
         </Heading>
         <VStack flex="1" w="100%" h="100%">
-          <Stack px={4} py={2} w="100%">
+          <Stack px="4" py="3" w="100%">
             <Link
               as={Button}
               justifyContent="left"
-              href="#"
+              href="/"
               size="sm"
-              bgColor="grey.200"
-              color="black.100"
+              bgColor="white.400"
+              color="black.200"
               fontWeight="400"
-              fontSize="md"
-              _hover={{ bgColor: 'grey.200' }}
+              _hover={{ bgColor: 'white.300' }}
             >
               General
             </Link>
           </Stack>
-          <Divider />
+          <Divider borderColor="white.500" />
           <Stack px={6} py={2} w="100%">
-            <Flex align="center" color="black.100" opacity="48%">
-              <Icon boxSize={4} opacity="36%" as={() => <GoTriangleRight />} />
-              <Text pl="1">My Entries</Text>
+            <Flex align="center" color="black.100" opacity="36%">
+              <Icon boxSize={3} opacity="24%" as={() => <GoTriangleRight />} />
+              <Text pl="1" fontSize="sm">
+                My Entries
+              </Text>
             </Flex>
           </Stack>
         </VStack>
-        <Stack p={6} align="center" justify="center" w="100%">
+        <Stack px="3" py="3" w="100%">
           <Button
             variant="accent"
             w="full"
@@ -66,4 +69,4 @@ const AdminSidebar: React.FC = () => {
     </chakra.aside>
   )
 }
-export default AdminSidebar
+export default UserAccountLeftSidebar

@@ -1,17 +1,30 @@
-import { background, color, extendTheme } from '@chakra-ui/react'
+import {
+  background,
+  color,
+  extendTheme,
+  type ThemeConfig
+} from '@chakra-ui/react'
+
+const config: ThemeConfig = {
+  initialColorMode: 'light',
+  useSystemColorMode: true,
+  cssVarPrefix: 'Buildlle-ui'
+}
 
 export default extendTheme({
   fonts: {
-    body: "-apple-system, Inter, BlinkMacSystemFont, 'Segoe UI'",
-    heading: "-apple-system, Inter, BlinkMacSystemFont, 'Segoe UI'",
+    body: "-apple-system, BlinkMacSystemFont, 'Segoe UI'",
+    heading: "-apple-system, BlinkMacSystemFont, 'Segoe UI'",
     fontDisplay: 'optional',
     webkitFontSmoothing: 'antialiased'
   },
 
+  config: {},
+
   styles: {
     global: {
       body: {
-        background: '#fff',
+        // background: '#fff',
         color: '#141415'
       },
       button: {
@@ -38,21 +51,40 @@ export default extendTheme({
       200: '#FFCD5C',
       300: '#FFEBBD'
     },
+    green: {
+      100: '#10A683'
+    },
+    white: {
+      100: '#FFFFFF',
+      200: '#FAFAFA',
+      300: '#F9FAFB',
+      400: '#F2F5F8',
+      500: '#EAEDF1'
+    },
     grey: {
-      100: '#EAEDF1',
-      200: '#F2F5F8',
-      300: '#FAFAFA'
+      100: 'rgba(255, 255, 255, 2%)',
+      200: 'rgba(242, 245, 248, 4%)',
+      300: 'rgba(234, 237, 241, 4%)',
+      400: 'rgba(189, 193, 198, 6%)',
+      500: 'rgba(189, 193, 198, 87%)',
+      600: '#BDC1C6'
     },
     black: {
-      100: '#141415'
+      100: '#141415',
+      200: 'rgba(20, 20, 21, 87%)'
+    },
+    link: {
+      100: '#1A0EAB',
+      200: '#86ADF0'
+    },
+    overlay: {
+      100: 'rgba(33, 40, 49, 72%)',
+      200: 'rgba(45, 50, 57, 72%)'
     },
     grad: {
       100: 'linear-gradient(220.48deg, #E69F00 -3.71%, #E65969 20.72%, #E609E1 43.48%, #AA0EE2 67.39%, #091AE6 105.56%)',
       200: 'linear-gradient(220.48deg, rgba(230, 159, 0, 0.68) -3.71%, rgba(230, 89, 105, 0.68) 20.72%, rgba(230, 9, 225, 0.68) 43.48%, rgba(170, 14, 226, 0.68) 67.39%, rgba(9, 26, 230, 0.68) 105.56%)',
       300: 'linear-gradient(220.48deg, rgba(230, 159, 0, 0.12) -3.71%, rgba(230, 89, 105, 0.12) 20.72%, rgba(230, 9, 225, 0.12) 43.48%, rgba(170, 14, 226, 0.12) 67.39%, rgba(9, 26, 230, 0.12) 105.56%)'
-    },
-    link: {
-      100: '#1A0EAB'
     }
   },
 
@@ -100,7 +132,8 @@ export default extendTheme({
         },
 
         'secondary-outline': {
-          border: '1px solid #141415',
+          border: '1px solid',
+          borderColor: 'black.100',
           backgroundColor: 'transparent',
           rounded: 'full',
           _focus: {
@@ -109,11 +142,11 @@ export default extendTheme({
         },
 
         accent: {
-          backgroundColor: 'grey.300',
+          backgroundColor: 'white.200',
           rounded: '12px',
           color: 'black.100',
           _hover: {
-            backgroundColor: 'grey.300'
+            backgroundColor: 'white.200'
           }
         },
 
@@ -179,7 +212,7 @@ export default extendTheme({
           field: {
             rounded: '13px',
             border: '1px solid',
-            borderColor: 'grey.100',
+            borderColor: 'white.500',
             color: 'black.100',
 
             _hover: {
